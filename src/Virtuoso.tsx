@@ -66,7 +66,7 @@ const DefaultScrollSeekPlaceholder = ({ height }: { height: number }) => <div st
 
 const GROUP_STYLE = { position: positionStickyCssValue(), zIndex: 1, overflowAnchor: 'none' } as const
 const ITEM_STYLE = { overflowAnchor: 'none' } as const
-const HORIZONTAL_ITEM_STYLE = { ...ITEM_STYLE, display: 'inline-block', height: '100%' } as const
+const HORIZONTAL_ITEM_STYLE = { ...ITEM_STYLE, display: 'inline-block', height: '100%', verticleAlign: 'top' } as const
 
 const Items = /*#__PURE__*/ React.memo(function VirtuosoItems({ showTopList = false }: { showTopList?: boolean }) {
   const listState = useEmitterValue('listState')
@@ -129,8 +129,7 @@ const Items = /*#__PURE__*/ React.memo(function VirtuosoItems({ showTopList = fa
               height: '100%',
               paddingLeft: listState.offsetTop,
               paddingRight: listState.offsetBottom,
-              marginLeft: deviation !== 0 ? deviation : alignToBottom ? 'auto' : 0,
-              verticalAlign: 'top'
+              marginLeft: deviation !== 0 ? deviation : alignToBottom ? 'auto' : 0
             }
           : {
               marginTop: deviation !== 0 ? deviation : alignToBottom ? 'auto' : 0,
