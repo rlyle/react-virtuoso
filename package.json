@@ -1,8 +1,8 @@
 {
-  "name": "react-virtuoso",
+  "name": "@rlyle1179/react-virtuoso",
   "author": "Petyo Ivanov",
   "sideEffects": false,
-  "version": "0.0.0-semantic-release",
+  "version": "1.0.0",
   "homepage": "https://virtuoso.dev/",
   "license": "MIT",
   "source": "src/index.tsx",

@@ -130,6 +130,7 @@ const Items = /*#__PURE__*/ React.memo(function VirtuosoItems({ showTopList = fa
               paddingLeft: listState.offsetTop,
               paddingRight: listState.offsetBottom,
               marginLeft: deviation !== 0 ? deviation : alignToBottom ? 'auto' : 0,
+              verticalAlign: 'top'
             }
           : {
               marginTop: deviation !== 0 ? deviation : alignToBottom ? 'auto' : 0,
